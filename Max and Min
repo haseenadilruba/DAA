@@ -1,0 +1,11 @@
+a = [25,11,78,64,32]
+
+mx = a[0]
+mn = a[0]
+
+for x in a:
+    if x > mx: mx = x
+    if x < mn: mn = x
+
+print("Maximum =",mx)
+print("Minimum =",mn)
