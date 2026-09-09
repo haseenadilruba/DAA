@@ -1,0 +1,21 @@
+p = [3,3,1]
+n = len(p)
+
+cost = [[0]*n for i in range(n)]
+
+for i in range(n):
+    cost[i][i] = p[i]
+
+for length in range(2,n+1):
+    for i in range(n-length+1):
+        j = i+length-1
+        cost[i][j] = 999
+
+        for r in range(i,j+1):
+            left = cost[i][r-1] if r > i else 0
+            right = cost[r+1][j] if r < j else 0
+            total = left + right + sum(p[i:j+1])
+
+            cost[i][j] = min(cost[i][j],total)
+
+print("Optimal cost =",cost[0][n-1])
