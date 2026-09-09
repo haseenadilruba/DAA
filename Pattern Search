@@ -1,0 +1,4 @@
+text = "ABAAABC"
+pattern = "ABC"
+
+print("Pattern found at index",text.find(pattern))
