@@ -1,0 +1,10 @@
+a = [[3,7],[1,9]]
+
+mx = a[0][0]
+
+for row in a:
+    for x in row:
+        if x > mx:
+            mx = x
+
+print("Largest element =",mx)
