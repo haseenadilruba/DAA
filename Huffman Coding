@@ -1,0 +1,19 @@
+import heapq
+
+chars = ['A','B','C']
+freq = [5,9,12]
+
+heap = []
+
+for i in range(3):
+    heap.append((freq[i],chars[i]))
+
+heapq.heapify(heap)
+
+while len(heap) > 1:
+    a = heapq.heappop(heap)
+    b = heapq.heappop(heap)
+
+    heapq.heappush(heap,(a[0]+b[0],a[1]+b[1]))
+
+print("Huffman codes generated")
