@@ -1,0 +1,7 @@
+a = [1,2,4,5]
+x = 3
+pos = 2
+
+a.insert(pos,x)
+
+print(a)
