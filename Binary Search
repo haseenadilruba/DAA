@@ -1,0 +1,18 @@
+a = [5,10,15,20,25,30]
+key = 25
+
+l = 0
+r = len(a)-1
+
+while l <= r:
+    m = (l+r)//2
+
+    if a[m] == key:
+        print("Element found at index",m)
+        break
+    elif key > a[m]:
+        l = m+1
+    else:
+        r = m-1
+else:
+    print("Element not found")
