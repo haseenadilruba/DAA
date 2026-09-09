@@ -1,0 +1,7 @@
+a = [4,8,15,16,23,42]
+key = 23
+
+for i in range(len(a)):
+    if a[i] == key:
+        print("Element found at index",i)
+        break
