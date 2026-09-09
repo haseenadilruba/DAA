@@ -1,0 +1,5 @@
+a = [5,2,8,1,4]
+
+a.remove(min(a))
+
+print("Second minimum element =",min(a))
