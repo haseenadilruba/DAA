@@ -1,0 +1,13 @@
+a = [38,27,43,3,9,82,10]
+
+if len(a) > 1:
+    mid = len(a)//2
+    L = a[:mid]
+    R = a[mid:]
+
+    L.sort()
+    R.sort()
+
+    a = sorted(L+R)
+
+print(a)
