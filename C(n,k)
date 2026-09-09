@@ -1,0 +1,6 @@
+n = 5
+k = 2
+
+import math
+
+print(math.comb(n,k))
