@@ -1,0 +1,16 @@
+a = [
+    [0,5,999,10],
+    [999,0,3,999],
+    [999,999,0,1],
+    [999,999,999,0]
+]
+
+n = 4
+
+for k in range(n):
+    for i in range(n):
+        for j in range(n):
+            a[i][j] = min(a[i][j],a[i][k]+a[k][j])
+
+for row in a:
+    print(row)
