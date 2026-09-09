@@ -1,0 +1,10 @@
+a = [[3,5],[7,2]]
+
+mn = a[0][0]
+
+for row in a:
+    for x in row:
+        if x < mn:
+            mn = x
+
+print("Minimum element =",mn)
