@@ -1,0 +1,10 @@
+edges = [(1,2),(2,3),(3,4)]
+
+cover = set()
+
+for u,v in edges:
+    if u not in cover and v not in cover:
+        cover.add(u)
+        cover.add(v)
+
+print("Vertex cover =",cover)
