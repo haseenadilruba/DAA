@@ -1,0 +1,9 @@
+a = [10,25,7,40,15]
+
+largest = a[0]
+
+for x in a:
+    if x > largest:
+        largest = x
+
+print("Largest =",largest)
