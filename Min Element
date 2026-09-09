@@ -1,0 +1,9 @@
+a = [18,42,6,27,14]
+
+mn = a[0]
+
+for x in a:
+    if x < mn:
+        mn = x
+
+print("Minimum element =",mn)
