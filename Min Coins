@@ -1,0 +1,9 @@
+coins = [25,10,5,1]
+amount = 41
+count = 0
+
+for c in coins:
+    count += amount//c
+    amount %= c
+
+print("Minimum coins required =",count)
